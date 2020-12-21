@@ -119,7 +119,7 @@ public class ConsultasBuscador  {
 			results = queryExecution.execSelect();
 			link=ResultSetFormatter.asText(results);
 			queryExecution.close() ;
-		}
+		 }
 			
 			if(propiedad=="ingrediente"){
 			String prefix="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
@@ -236,7 +236,8 @@ public class ConsultasBuscador  {
 			}
 
 		
-		return link;
+			return link;
+		
 	}
 	
 }
