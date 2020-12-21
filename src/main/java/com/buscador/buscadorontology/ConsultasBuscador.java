@@ -1,5 +1,9 @@
 package com.buscador.buscadorontology;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
 import com.buscador.buscadorontology.clases.BaseInformacion;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
@@ -17,7 +21,17 @@ public class ConsultasBuscador  {
 	
 	public ConsultasBuscador() {
 	    modelo = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		modelo.read("C:\\Users\\HP 240-G5\\Downloads\\search-ontology-master\\OntologiaQueso.owl","OWL/XML");
+	    try {
+			InputStream in = new FileInputStream("OntologiaQueso.owl");
+			modelo.read(in,null);
+			//in.close();
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} // or any windows path
+
+		
 		
 	}
 	
@@ -42,6 +56,7 @@ public class ConsultasBuscador  {
   		 results = queryExecution.execSelect();
   		 link=ResultSetFormatter.asText(results);
   		 queryExecution.close() ; 
+  		// System.out.println(link);
 			
 		}
 		
