@@ -7,6 +7,17 @@ public class QuesoDuro extends Queso{
         super(id,d,p,n,pa);  
         envejecimiento=e;    
    }
+
+   public String getEnvejecimiento() {
+       return envejecimiento;
+   }
+
+   public void setEnvejecimiento(String envejecimiento) {
+       this.envejecimiento = envejecimiento;
+   }
+
+
+	
    
 
 }

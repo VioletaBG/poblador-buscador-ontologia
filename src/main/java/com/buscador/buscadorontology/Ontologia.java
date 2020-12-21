@@ -164,19 +164,19 @@ public class Ontologia {
 	
 	private void CrearIndividuoQuesoDuro(){
 		ConsultasDBpedia consultaDBpedia = new ConsultasDBpedia();
-		Individual brie = modelo.createIndividual(NS+":"+"Brie",quesoDuro);
-		manchego = modelo.createIndividual(NS+":"+"Manchego",quesoDuro);
+		Individual halloumi = modelo.createIndividual(NS+":"+"Brie",quesoDuro);
+		Individual manchego = modelo.createIndividual(NS+":"+"Manchego",quesoDuro);
 		Individual ricotta = modelo.createIndividual(NS+":"+"Ricotta",quesoDuro);
 		Individual majorero = modelo.createIndividual(NS+":"+"Majorero",quesoDuro);
-		parmesano = modelo.createIndividual(NS+":"+"Parmigiano-Reggiano",quesoDuro);
+		Individual parmesano = modelo.createIndividual(NS+":"+"Parmigiano-Reggiano",quesoDuro);
 		Individual corleggy = modelo.createIndividual(NS+":"+"Corleggy_Cheese",quesoDuro);
 		
-		// propiedades para el individuo brie
-		brie.setPropertyValue(envejecimiento, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("aging", "Brie")));
-		brie.setPropertyValue(descripcion, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion", "Brie")));
-      	brie.setPropertyValue(nombre, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("name", "Brie")));
-		brie.setPropertyValue(procedencia, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("source", "Brie")));
-		brie.setPropertyValue(pais, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais", "Brie")));
+		// propiedades para el individuo halloumi
+		halloumi.setPropertyValue(envejecimiento, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("aging", "Halloumi")));
+		halloumi.setPropertyValue(descripcion, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion", "Halloumi")));
+		halloumi.setPropertyValue(nombre, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("name", "Halloumi")));
+		halloumi.setPropertyValue(procedencia, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("source", "Halloumi")));
+		halloumi.setPropertyValue(pais, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais", "Halloumi")));
 		
 		//propiedades para el individuo manchego
 		manchego.setPropertyValue(envejecimiento, modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("aging", "Manchego")));
