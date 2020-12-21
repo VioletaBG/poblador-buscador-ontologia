@@ -38,6 +38,7 @@ public class Ontologia {
 	 private DatatypeProperty textura;
 	 private DatatypeProperty descripcionp;
 	 private DatatypeProperty paisp;
+	 private DatatypeProperty nombrep;
 	 private DatatypeProperty ingrediente;
 	 private  ObjectProperty tieneComoIngrediente;
 	 private Individual parmesano;
@@ -71,8 +72,8 @@ public class Ontologia {
 	     nombre = modelo.createDatatypeProperty(NS+":"+"Nombre");
 	     nombre.addDomain(queso);
 	     nombre.addRange(XSD.xstring);
-	     nombre.convertToFunctionalProperty();
-	     
+		 nombre.convertToFunctionalProperty();
+
 	     pais = modelo.createDatatypeProperty(NS+":"+"PaisQueso");
 	     pais.addDomain(queso);
 	     pais.addRange(XSD.xstring);
@@ -101,7 +102,12 @@ public class Ontologia {
 	     descripcionp = modelo.createDatatypeProperty(NS+":"+"DescripcionPasta");
 	     descripcionp.addDomain(Pasta);
 	     descripcionp.addRange(XSD.xstring);
-	     descripcionp.convertToFunctionalProperty();
+		 descripcionp.convertToFunctionalProperty();
+		 
+		 nombre = modelo.createDatatypeProperty(NS+":"+"NombrePasta");
+	     nombre.addDomain(Pasta);
+	     nombre.addRange(XSD.xstring);
+		 nombre.convertToFunctionalProperty();
 
 	     paisp = modelo.createDatatypeProperty(NS+":"+"PaisPasta");
 	     paisp.addDomain(Pasta);
