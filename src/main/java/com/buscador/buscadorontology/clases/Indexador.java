@@ -49,6 +49,23 @@ public class Indexador {
         doc.add(new Field("Contenido", TextoCompletoBuscado, Field.Store.YES, Field.Index.TOKENIZED));
         writer.addDocument(doc);	
     }
+	
+    public void indexQuesoSuave(QuesoSuave queso) throws IOException  {
+        System.out.println("Indexando Quesos SUAVES: " + queso);
+        IndexWriter writer = getIndexadoEscrito(false);
+        Document doc = new Document();
+        doc.add(new Field("Id", queso.getId(), Field.Store.YES, Field.Index.NO));
+        doc.add(new Field("Nombre", queso.getNombre(), Field.Store.YES, Field.Index.TOKENIZED));
+        doc.add(new Field("Pais", queso.getPais(), Field.Store.YES, Field.Index.UN_TOKENIZED));
+        doc.add(new Field("Descripcion", queso.getDescripcion(), Field.Store.YES, Field.Index.TOKENIZED));
+        doc.add(new Field("origen", queso.getOrigen(), Field.Store.YES, Field.Index.TOKENIZED));
+           
+        String TextoCompletoBuscado = queso.getNombre() + " " + queso.getPais() + " " + queso.getDescripcion();
+        doc.add(new Field("Contenido", TextoCompletoBuscado, Field.Store.YES, Field.Index.TOKENIZED));
+        writer.addDocument(doc);
+    	
+    }
+	
     public void indexPasta(Pasta pasta) throws IOException  {
         System.out.println("Indexando Pasta: " + pasta);
         IndexWriter writer = getIndexadoEscrito(false);
@@ -72,16 +89,22 @@ public class Indexador {
         // Indexa todas las entradas
         //
         BaseQuesoSemiSuave quesoSemiSuaveBD  = new BaseQuesoSemiSuave();
+	BaseQuesoSuave quesoSuaveBD  = new BaseQuesoSuave(); 
         BasePasta pastaDB = new BasePasta();
 
         ArrayList<QuesoSemiSuave> quesos = quesoSemiSuaveBD.getQuesos();
+	ArrayList<QuesoSuave> quesosSuaves = quesoSuaveBD.getQuesos();
         ArrayList<Pasta> pastas = pastaDB.getPastas();
-        
+      
+      
         for(QuesoSemiSuave queso : quesos) {
             indexQuesoSemiSuave(queso);              
         }
         for(Pasta pasta : pastas) {
             indexPasta(pasta);              
+        }
+	for(QuesoSuave quesosuave : quesosSuaves) {
+           indexQuesoSuave(quesosuave);              
         }
         //
         // Cierra el indexado mientras se realiza
