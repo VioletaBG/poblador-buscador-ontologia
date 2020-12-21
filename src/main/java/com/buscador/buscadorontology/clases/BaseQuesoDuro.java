@@ -25,11 +25,11 @@ public class BaseQuesoDuro extends BaseInformacion {
 	   public void añadirBD() {
 		int i=0;
 		for(String individuo : nombresIndividuos) {
-			String descrip=consultaBuscador.GetDatoOntologia("descripcionQ",individuo);
-			String pais = consultaBuscador.GetDatoOntologia("paisq", individuo);
-			String nombre = consultaBuscador.GetDatoOntologia("nombreq", individuo);
-			String origen = consultaBuscador.GetDatoOntologia("origen", individuo);
-			String envejecimiento = consultaBuscador.GetDatoOntologia("envejecimiento", individuo);
+			String descrip= limpiarDescripcion(consultaBuscador.GetDatoOntologia("descripcionQ",individuo));
+			String pais = limpiarPais(consultaBuscador.GetDatoOntologia("paisq", individuo));
+			String nombre = limpiarNombre(consultaBuscador.GetDatoOntologia("nombreq", individuo));
+			String origen = limpiarSimple(consultaBuscador.GetDatoOntologia("origen", individuo));
+			String envejecimiento = limpiarSimple(consultaBuscador.GetDatoOntologia("envejecimiento", individuo));
 			
 			System.out.println("Descrip "+descrip+" " +pais+" "+nombre+" "+origen+" "+envejecimiento);
 			QuesoDuro quesoDuro= new QuesoDuro(i+"",descrip,pais, nombre, origen, envejecimiento);
