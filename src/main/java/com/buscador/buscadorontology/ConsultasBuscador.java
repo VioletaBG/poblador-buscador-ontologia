@@ -96,8 +96,6 @@ public class ConsultasBuscador  {
 	  		  		"                \r\n" + 
 	  		  		"                   }";
 	  		 
-	  		 
-	  		 
 	  		 queryExecution = QueryExecutionFactory.create(querydescripcionp, modelo);
 	  		 results = queryExecution.execSelect();
 	  		 link=ResultSetFormatter.asText(results);
