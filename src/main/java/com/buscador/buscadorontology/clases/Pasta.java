@@ -8,13 +8,21 @@ public class Pasta {
  private String id;
  
  public Pasta(String id, String nom, String des, String pais, String ingre) {
-	 this.id=id;
+	 this.setId(id);
 	 this.descripcion =des;
 	 this.nombre = nom;
 	 this.pais=pais;
 	 this.ingredientes=ingre;
 	 
  }
+
+public String getId() {
+	return id;
+}
+
+public void setId(String id) {
+	this.id = id;
+}
 
 public String getDescripcion() {
 	return descripcion;

@@ -19,7 +19,6 @@ public class BaseQuesoSemiSuave extends BaseInformacion{
 	  nombresIndividuos.add("\"Rocamadour\"");
 	  nombresIndividuos.add("\"Tetilla\"");
 	  nombresIndividuos.add("\"Waterloo\"");
-      
 	  añadirBD();
    }
    

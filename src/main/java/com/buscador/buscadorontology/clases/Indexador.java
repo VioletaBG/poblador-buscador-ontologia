@@ -21,8 +21,8 @@ public class Indexador {
     public IndexWriter getIndexadoEscrito(boolean create) throws IOException {
         if (escribirIndexado == null) {
             escribirIndexado = new IndexWriter("index-directory",
-                                          new StandardAnalyzer(),
-                                          create);
+                                        new StandardAnalyzer(),
+                                        create);
         }
         return escribirIndexado;
    }    
@@ -45,14 +45,24 @@ public class Indexador {
         doc.add(new Field("textura", queso.getTextura(), Field.Store.YES, Field.Index.TOKENIZED));
         doc.add(new Field("pasteurizado", queso.getPasteurizado(), Field.Store.YES, Field.Index.TOKENIZED));
  
-        
-        
         String TextoCompletoBuscado = queso.getNombre() + " " + queso.getPais() + " " + queso.getDescripcion();
         doc.add(new Field("Contenido", TextoCompletoBuscado, Field.Store.YES, Field.Index.TOKENIZED));
-        writer.addDocument(doc);
-    	
+        writer.addDocument(doc);	
     }
-   
+    public void indexPasta(Pasta pasta) throws IOException  {
+        System.out.println("Indexando Pasta: " + pasta);
+        IndexWriter writer = getIndexadoEscrito(false);
+        Document doc = new Document();
+        doc.add(new Field("Id", pasta.getId(), Field.Store.YES, Field.Index.NO));
+        doc.add(new Field("Nombre", pasta.getNombre(), Field.Store.YES, Field.Index.TOKENIZED));
+        doc.add(new Field("Pais", pasta.getPais(), Field.Store.YES, Field.Index.UN_TOKENIZED));
+        doc.add(new Field("Descripcion", pasta.getDescripcion(), Field.Store.YES, Field.Index.TOKENIZED));
+        doc.add(new Field("Ingredientes", pasta.getIngredientes(), Field.Store.YES, Field.Index.TOKENIZED));
+        
+        String TextoCompletoBuscado = pasta.getNombre() + " " + pasta.getPais() + " " + pasta.getDescripcion()+" "+pasta.getIngredientes();
+        doc.add(new Field("Contenido", TextoCompletoBuscado, Field.Store.YES, Field.Index.TOKENIZED));
+        writer.addDocument(doc);	
+    }
     
     public void reconstruyeIndexado() throws IOException {
     	 // Elimina el Indice Existente
@@ -62,17 +72,21 @@ public class Indexador {
         // Indexa todas las entradas
         //
         BaseQuesoSemiSuave quesoSemiSuaveBD  = new BaseQuesoSemiSuave();
-        
+        BasePasta pastaDB = new BasePasta();
+
         ArrayList<QuesoSemiSuave> quesos = quesoSemiSuaveBD.getQuesos();
+        ArrayList<Pasta> pastas = pastaDB.getPastas();
         
         for(QuesoSemiSuave queso : quesos) {
             indexQuesoSemiSuave(queso);              
+        }
+        for(Pasta pasta : pastas) {
+            indexPasta(pasta);              
         }
         //
         // Cierra el indexado mientras se realiza
         //
         closeIndexadoEscrito();
-    	
     }
     
 }
