@@ -23,19 +23,73 @@ public class ConsultasBuscador  {
 	
 	public String GetDatoOntologia(String propiedad, String individuo) {
 		
-		if(propiedad=="descripcion") {
-		  String prefixos= "";
+		if(propiedad=="descripcionQ") {
+		  String prefixos= "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n" + 
+		  		"PREFIX owl: <http://www.w3.org/2002/07/owl#>\r\n" + 
+		  		"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\n" + 
+		  		"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\r\n";
   			 
-  		  String	queryPrueba=prefixos+"";
+  		  String	querydescripcionq=prefixos+"SELECT ?descrip \r\n" + 
+  		  		"     WHERE { ?n <queso:DescripcionQueso> ?descrip. \r\n" + 
+  		  		"	?n <queso:Nombre> ?nomQ .\r\n" + 
+  		  		"                        FILTER(regex(?nomQ,"+individuo+"))\r\n" + 
+  		  		"                \r\n" + 
+  		  		"                   }";
   		 
   		 
   		 
-  		 queryExecution = QueryExecutionFactory.create(queryPrueba, modelo);
+  		 queryExecution = QueryExecutionFactory.create(querydescripcionq, modelo);
   		 results = queryExecution.execSelect();
   		 link=ResultSetFormatter.asText(results);
   		 queryExecution.close() ; 
 			
 		}
+		
+		if(propiedad=="descripcionP") {
+			  String prefixos="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n" + 
+			  		"PREFIX owl: <http://www.w3.org/2002/07/owl#>\r\n" + 
+			  		"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\n" + 
+			  		"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
+	  			 
+	  		  String	querydescripcionp=prefixos+"SELECT ?descrip \r\n" + 
+	  		  		"     WHERE { ?n <queso:DescripcionPasta> ?descrip. \r\n" + 
+	  		  		"	?n <queso:Nombre> ?nomP .\r\n" + 
+	  		  		"                        FILTER(regex(?nomP,"+individuo+"))\r\n" + 
+	  		  		"                \r\n" + 
+	  		  		"                   }";
+	  		 
+	  		 
+	  		 
+	  		 queryExecution = QueryExecutionFactory.create(querydescripcionp, modelo);
+	  		 results = queryExecution.execSelect();
+	  		 link=ResultSetFormatter.asText(results);
+	  		 queryExecution.close() ; 
+				
+			}
+		
+		if(propiedad=="pasteurizado") {
+			  String prefixos="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n" + 
+			  		"PREFIX owl: <http://www.w3.org/2002/07/owl#>\r\n" + 
+			  		"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\n" + 
+			  		"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
+	  			 
+	  		  String	querydescripcionp=prefixos+"                                  \r\n" + 
+	  		  		"SELECT ?pasteurizado\r\n" + 
+	  		  		"     WHERE { ?n <queso:Pateurizado> ?pasteurizado. \r\n" + 
+	  		  		"	?n <queso:Nombre> ?nomQ .\r\n" + 
+	  		  		"	FILTER(regex(?nomQ,"+individuo+"))\r\n" + 
+	  		  		"                \r\n" + 
+	  		  		"                   }";
+	  		 
+	  		 
+	  		 
+	  		 queryExecution = QueryExecutionFactory.create(querydescripcionp, modelo);
+	  		 results = queryExecution.execSelect();
+	  		 link=ResultSetFormatter.asText(results);
+	  		 queryExecution.close() ; 
+				
+			}
+		
 		if(propiedad=="envejecimiento"){
 			String prefix="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
 						 +"PREFIX owl: <http://www.w3.org/2002/07/owl#>" 
