@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="height: 500px; margin-top: 100px;">
+        <div class="row align-items-center">
+            <div class="row justify-content-center image col-12 ">
+                <img src="search.svg" style="width:300px;"alt="">
+            </div>
+            <div class="row form col-12 justify-content-center" style="">
+                <form class="form-inline" th:action="@{/resultados}" th:object="${frase}" method="post">
+                    <input class="form-control mr-sm-2" type="text" placeholder="buscar" th:field="*{frase}">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
