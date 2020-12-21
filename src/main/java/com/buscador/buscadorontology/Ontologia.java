@@ -104,10 +104,10 @@ public class Ontologia {
 	     descripcionp.addRange(XSD.xstring);
 		 descripcionp.convertToFunctionalProperty();
 		 
-		 nombre = modelo.createDatatypeProperty(NS+":"+"NombrePasta");
-	     nombre.addDomain(Pasta);
-	     nombre.addRange(XSD.xstring);
-		 nombre.convertToFunctionalProperty();
+		 nombrep = modelo.createDatatypeProperty(NS+":"+"NombrePasta");
+	     nombrep.addDomain(Pasta);
+	     nombrep.addRange(XSD.xstring);
+		 nombrep.convertToFunctionalProperty();
 
 	     paisp = modelo.createDatatypeProperty(NS+":"+"PaisPasta");
 	     paisp.addDomain(Pasta);
@@ -403,7 +403,7 @@ public class Ontologia {
 		lasania.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Lasagne")));
 		lasania.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Lasagne")));
 		lasania.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Lasagne")));
-		lasania.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Lasagne")));
+		lasania.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Lasagne")));
 		
 		lasania.addProperty(tieneComoIngrediente, mozzarella);
 		lasania.addProperty(tieneComoIngrediente, manchego);
@@ -412,7 +412,7 @@ public class Ontologia {
 		spaghetti.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Spaghetti")));
 		spaghetti.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Spaghetti")));
 		spaghetti.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Spaghetti")));
-		spaghetti.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("name","Spaghetti")));
+		spaghetti.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("name","Spaghetti")));
 
 		
 		spaghetti.addProperty(tieneComoIngrediente,parmesano);
@@ -422,14 +422,14 @@ public class Ontologia {
 		maultasche.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Maultasche")));
 		maultasche.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Maultasche")));
 		maultasche.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Maultasche")));
-		maultasche.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Maultasche")));
+		maultasche.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Maultasche")));
 
 		
 		//propiedades para el individuo ravioli
 		ravioli.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Ravioli")));
 		ravioli.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Ravioli")));
 		ravioli.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Ravioli")));
-		ravioli.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Ravioli")));
+		ravioli.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Ravioli")));
 
 		
 		
@@ -437,19 +437,19 @@ public class Ontologia {
 		croxetti.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Croxetti")));
 		croxetti.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Croxetti")));
 		croxetti.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Croxetti")));
-		croxetti.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Croxetti")));
+		croxetti.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Croxetti")));
 
 		//propiedades para el individuo Pastina
 		pastina.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Pastina")));
 		pastina.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Pastina")));
 		pastina.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Pastina")));
-		pastina.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pastina")));
+		pastina.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pastina")));
 
 		//propiedades para el individuo Macaroni_casserole
 		macaroni_casserole.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Macaroni_casserole")));
 		macaroni_casserole.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Macaroni_casserole")));
 		macaroni_casserole.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredientName","Macaroni_casserole")));
-		macaroni_casserole.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Macaroni_casserole")));
+		macaroni_casserole.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Macaroni_casserole")));
 
 		
 		macaroni_casserole.addProperty(tieneComoIngrediente,mozzarella);
@@ -460,20 +460,20 @@ public class Ontologia {
 		pasta_al_pomodoro.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Pasta_al_pomodoro")));
 		pasta_al_pomodoro.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Pasta_al_pomodoro")));
 		pasta_al_pomodoro.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredient","Pasta_al_pomodoro")));
-		pasta_al_pomodoro.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pasta_al_pomodoro")));
+		pasta_al_pomodoro.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pasta_al_pomodoro")));
 
 		//propiedades para el individuo Pasta_primavera
 		pasta_primavera.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Pasta_primavera")));
 		pasta_primavera.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Pasta_primavera")));
 		pasta_primavera.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredient","Pasta_primavera")));
-		pasta_primavera.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pasta_primavera")));
+		pasta_primavera.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Pasta_primavera")));
 
 		
 		//propiedades para el individuo Bigoli
 		bigoli.setPropertyValue(descripcionp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("descripcion","Bigoli")));
 		bigoli.setPropertyValue(paisp,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("pais","Bigoli")));
 		bigoli.setPropertyValue(ingrediente,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("ingredient","Bigoli")));
-		bigoli.setPropertyValue(nombre,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Bigoli")));
+		bigoli.setPropertyValue(nombrep,modelo.createTypedLiteral(consultaDBpedia.GetDatoDbpedia("fname","Bigoli")));
 
 	}	 
 }
