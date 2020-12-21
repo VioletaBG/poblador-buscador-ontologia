@@ -53,7 +53,7 @@ public class ConsultasBuscador  {
 	  			 
 	  		  String	querydescripcionp=prefixos+"SELECT ?descrip \r\n" + 
 	  		  		"     WHERE { ?n <queso:DescripcionPasta> ?descrip. \r\n" + 
-	  		  		"	?n <queso:Nombre> ?nomP .\r\n" + 
+	  		  		"	 ?n <queso:NombrePasta> ?nomP .\r\n"+
 	  		  		"                        FILTER(regex(?nomP,"+individuo+"))\r\n" + 
 	  		  		"                \r\n" + 
 	  		  		"                   }";
@@ -148,7 +148,7 @@ public class ConsultasBuscador  {
 						 +"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
 				String queryPaisp=prefix+"SELECT ?pais "+
 									"WHERE { ?n <queso:PaisPasta> ?pais . "+
-										      +"?n <queso:NombrePasta> ?nomP "
+										      +"?n <queso:NombrePasta> ?nomP . "
 										      +"FILTER(regex(?nomP, "+individuo+"))}";
 												   
 				queryExecution = QueryExecutionFactory.create(queryPaisp, modelo);
@@ -167,7 +167,7 @@ public class ConsultasBuscador  {
 							"WHERE { ?n <queso:Textura> ?text . "+
 								"?n <queso:Nombre> ?nomQ . "+
 						  +"FILTER(regex(?nomQ, "+individuo+"))}";
-				 queryExecution = QueryExecutionFactory.create(queryPais, modelo);
+				 queryExecution = QueryExecutionFactory.create(queryTextura,modelo);
 				 results = queryExecution.execSelect();
 				 link=ResultSetFormatter.asText(results);
 				 queryExecution.close() ; 
