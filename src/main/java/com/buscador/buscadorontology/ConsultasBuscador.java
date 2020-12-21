@@ -17,7 +17,7 @@ public class ConsultasBuscador  {
 	
 	public ConsultasBuscador() {
 	    modelo = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		modelo.read("Direccion archivo owl","OWL/XML");
+		modelo.read("C:\\Users\\HP 240-G5\\Downloads\\search-ontology-master\\OntologiaQueso.owl","OWL/XML");
 		
 	}
 	
@@ -130,9 +130,9 @@ public class ConsultasBuscador  {
 						 +"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
 						 +"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
 
-				  String queryPaisq=prefix+"SELECT ?pais "+
+				  String queryPaisq=prefixos+"SELECT ?pais "+
 									"WHERE { ?n <queso:PaisQueso> ?pais . "+
-										"?n <queso:Nombre> ?nomQ . "+
+										"?n <queso:Nombre> ?nomQ . "
 									  +"FILTER(regex(?nomQ, "+individuo+"))}";
 				 queryExecution = QueryExecutionFactory.create(queryPaisq, modelo);
 				 results = queryExecution.execSelect();
@@ -147,7 +147,7 @@ public class ConsultasBuscador  {
 						 +"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
 						 +"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
 				String queryPaisp=prefix+"SELECT ?pais "+
-									"WHERE { ?n <queso:PaisPasta> ?pais . "+
+									"WHERE { ?n <queso:PaisPasta> ?pais . "
 										      +"?n <queso:NombrePasta> ?nomP . "
 										      +"FILTER(regex(?nomP, "+individuo+"))}";
 												   
@@ -165,7 +165,7 @@ public class ConsultasBuscador  {
 						 +"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
 				String queryTextura=prefixos+"SELECT ?text "+
 							"WHERE { ?n <queso:Textura> ?text . "+
-								"?n <queso:Nombre> ?nomQ . "+
+								"?n <queso:Nombre> ?nomQ . "
 						  +"FILTER(regex(?nomQ, "+individuo+"))}";
 				 queryExecution = QueryExecutionFactory.create(queryTextura,modelo);
 				 results = queryExecution.execSelect();
@@ -186,6 +186,22 @@ public class ConsultasBuscador  {
 					results = queryExecution.execSelect();
 					link=ResultSetFormatter.asText(results);
 					queryExecution.close() ;													
+			}
+			
+			if(propiedad=="nombreq") {
+				String prefix="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+						 +"PREFIX owl: <http://www.w3.org/2002/07/owl#>" 
+						 +"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+						 +"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>";
+				String queryNombreP=prefix+"SELECT ?nomP "+
+									"WHERE { ?n <queso:Nombre> ?nomP "
+											  +"FILTER(regex(?nomP, "+individuo+"))}";
+												   
+				queryExecution = QueryExecutionFactory.create(queryNombreP, modelo);
+				results = queryExecution.execSelect();
+				link=ResultSetFormatter.asText(results);
+				queryExecution.close() ;	
+				
 			}
 
 		

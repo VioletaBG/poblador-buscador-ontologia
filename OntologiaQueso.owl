@@ -5,31 +5,6 @@
     xmlns:j.0="queso:"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
-  <rdf:Description rdf:about="queso:Bigoli">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------&#xD;
-| name        |&#xD;
-===============&#xD;
-| "Bigoli"@en |&#xD;
----------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| country |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| country |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |&#xD;
-===================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "Los bigoli son un tipo de pasta larga, parecidos a espaguetis gruesos, originarios del Véneto y presentes en la Lombardía oriental. Se elabora con harina de trigo, agua y sal. La característica principal de esta pasta es su rugosidad, que le permite retener salsas y condimentos. Esta peculiaridad se consigue con el método de preparación, que emplea una prensa con forma tradicional. Existen algunas variantes de esta pasta, que se obtienen cambiando el tipo de harina, por ejemplo por la de trigo sarraceno (para obtener bigoli oscuros), o añadiéndole huevo. Los bigoli se sirven con acompañantes tradicionales, especialmente pato, salsa o sardina."@es |&#xD;
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Reblochon">
     <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------&#xD;
 | source                                                          |&#xD;
@@ -72,12 +47,12 @@
   <rdf:Description rdf:about="queso:Lasaña">
     <j.0:TieneComoIngrediente rdf:resource="queso:Manchego"/>
     <j.0:TieneComoIngrediente rdf:resource="queso:Mozzarella"/>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
 | name         |&#xD;
 ================&#xD;
 | "Lasagne"@en |&#xD;
 ----------------&#xD;
-</j.0:Nombre>
+</j.0:NombrePasta>
     <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
 | valorIngredientName |&#xD;
 =======================&#xD;
@@ -94,33 +69,6 @@
 ==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
 | "La lasaña (italiano: lasagna) es un tipo de pasta que se sirve en láminas, además de denominarse así también a un plato que tiene pasta en láminas intercaladas con carne (ragú o salsa boloñesa) y bechamel llamado lasaña al horno (Lasagna al forno). Se trata de un plato de origen griego/italiano. La lasaña al horno también se puede hacer con verduras (espinacas, berenjenas, etc.) o pescados. Se termina con bechamel y abundante queso rallado para gratinarla en el horno. Ambos platos tienen como lugar de origen Italia. La palabra \"lasaña\" proviene del griego \"lasanon\", a través del latín \"lasanum\", que se refiere al cazo en el que se cocinaba. La palabra singular en italiano es lasagna y en plural lasagne se aplica indistintamente al plato o a la pasta en forma de láminas. Es una entrada o primer plato caliente que se suele comer en invierno o en los periodos fríos de la primavera. En Venezuela se le conoce con el nombre de pasticho, que proviene del italiano: Pasticcio di lasagne (pastel de lasaña) es otro nombre, o sinónimo, con el que denominan al plato en ciertos lugares de Italia."@es |&#xD;
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Spaghetti">
-    <j.0:TieneComoIngrediente rdf:resource="queso:Parmigiano-Reggiano"/>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------&#xD;
-| name                                                                 |&#xD;
-========================================================================&#xD;
-| "Spaghetti"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-------------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------&#xD;
-| valorIngredientName     |&#xD;
-===========================&#xD;
-| "Semolinaorflour,water" |&#xD;
----------------------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| country |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                             |&#xD;
-========================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "Los espagueti (del italiano, spaghetti [spaˈɡetti]; en singular, spaghetto) son un tipo de pasta italiana elaborada con harina de grano duro y agua. Tienen forma de delgadas cuerdas largas, sección circular y un tamaño aproximado entre 25 y 30 centímetros. Se trata de uno de los ingredientes más representativos de la gastronomía italiana cuya popularidad trasciende a otros países."@es |&#xD;
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
 </j.0:DescripcionPasta>
     <rdf:type rdf:resource="queso:Pasta"/>
   </rdf:Description>
@@ -155,6 +103,385 @@
 --------------&#xD;
 </j.0:Envejecimiento>
     <rdf:type rdf:resource="queso:QuesoDuro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Pastina">
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
+| name         |&#xD;
+================&#xD;
+| "Pastina"@en |&#xD;
+----------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
+| valorIngredientName |&#xD;
+=======================&#xD;
+| "Wheat flour"       |&#xD;
+-----------------------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| country |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------&#xD;
+| abstract |&#xD;
+============&#xD;
+------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Feta">
+    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| source                                                                                                                              |&#xD;
+=======================================================================================================================================&#xD;
+| "Pietro Casola, 15th-century Italian traveler to Crete"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt;                    |&#xD;
+| "Sheep  and goat per PDO; similar cheeses may contain cow or buffalo milk"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:Procedencia>
+    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
+| texture                                                                       |&#xD;
+=================================================================================&#xD;
+| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------------------&#xD;
+</j.0:Textura>
+    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------&#xD;
+| name                                                            |&#xD;
+===================================================================&#xD;
+| "Feta"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+-------------------------------------------------------------------&#xD;
+</j.0:Nombre>
+    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------&#xD;
+| country                                                           |&#xD;
+=====================================================================&#xD;
+| "Greece"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------&#xD;
+</j.0:PaisQueso>
+    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
+| pasteurized                                                                   |&#xD;
+=================================================================================&#xD;
+| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------------------&#xD;
+</j.0:Pateurizado>
+    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |&#xD;
+=================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "Feta (griego: φέτα, género femenino, en turco beyaz peynir, literalmente \"queso blanco\", en búlgaro сирене) se trata de un queso clásico de Grecia, Turquía, Dinamarca, Rumania y Bulgaria, fundamentado en la cuajada del queso que se cura en salmuera. Este tipo de queso es muy tradicional y aparece descrito hace cientos de años y se remonta, por lo menos, a la Antigüedad clásica. La feta se elabora generalmente con leche de oveja aunque puede encontrase variedades con leche de yegua. El queso feta tiene tal popularidad en Grecia que incluso se importa de otras zonas, como Dinamarca. En Grecia se elaboraba tradicionalmente con leche de oveja, o a veces con una mezcla de leche de oveja y cabra, lo cual le daba un sabor bien definido, y un punto de sal derivado de sumergir el queso fresco en salmuera.Actualmente, se utiliza también leche de vaca y su sabor ya no es tan definido."@es |&#xD;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionQueso>
+    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Croxetti">
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------&#xD;
+| name          |&#xD;
+=================&#xD;
+| "Croxetti"@en |&#xD;
+-----------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
+| valorIngredientName |&#xD;
+=======================&#xD;
+-----------------------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| country |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------&#xD;
+| abstract |&#xD;
+============&#xD;
+------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Maultasche">
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------&#xD;
+| name             |&#xD;
+====================&#xD;
+| "Maultaschen"@en |&#xD;
+--------------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------&#xD;
+| valorIngredientName                                               |&#xD;
+=====================================================================&#xD;
+| "Pasta dough,minced meat,smoked meat,spinach,bread crumbs,onions" |&#xD;
+---------------------------------------------------------------------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
+| country                                                            |&#xD;
+======================================================================&#xD;
+| "Germany"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+----------------------------------------------------------------------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                   |&#xD;
+==============================================================================================================================================================================================================================&#xD;
+| "Las Maultaschen son una especialidad de pasta rellena, a veces acompañada de caldo, típica de la región de Suabia (Alemania) y muy conocida en la cocina alemana. En alemán significa literalmente bolsillo de morro."@es |&#xD;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Tetilla">
+    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------&#xD;
+| source                                                                |&#xD;
+=========================================================================&#xD;
+| "Cows' milk"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+-------------------------------------------------------------------------&#xD;
+</j.0:Procedencia>
+    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------&#xD;
+| texture                                                                 |&#xD;
+===========================================================================&#xD;
+| "Soft, creamy"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------------&#xD;
+</j.0:Textura>
+    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
+| name                                                               |&#xD;
+======================================================================&#xD;
+| "Tetilla"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+----------------------------------------------------------------------&#xD;
+</j.0:Nombre>
+    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------&#xD;
+| country                                                          |&#xD;
+====================================================================&#xD;
+| "Spain"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+--------------------------------------------------------------------&#xD;
+</j.0:PaisQueso>
+    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------&#xD;
+| pasteurized                                                    |&#xD;
+==================================================================&#xD;
+| "Yes"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+------------------------------------------------------------------&#xD;
+</j.0:Pateurizado>
+    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |&#xD;
+=======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "El queso tetilla es uno de los quesos más representativos de la gastronomía de Galicia (España) y se trata de uno de los quesos con denominación de Origen. Está elaborado fundamentalmente con leche pasteurizada de vaca de las razas gallegas, con una maduración mínima de 7 días. Su forma cónica, cóncava-convexa, es la que le da nombre, porque recuerda a una mama o «tetilla»; esta forma le viene dada por los embudos en los que se deja cuajar la leche al inicio de su elaboración, característica que comparte con otras especialidades queseras gallegas, como el queso de San Simón. Posee Denominación de Origen desde 1992."@es |&#xD;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionQueso>
+    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:QuesoSuave">
+    <rdfs:subClassOf rdf:resource="queso:Queso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Procedencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="queso:Queso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Limburger">
+    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------&#xD;
+| source                            |&#xD;
+=====================================&#xD;
+| &lt;http://dbpedia.org/resource/Cow&gt; |&#xD;
+-------------------------------------&#xD;
+</j.0:Procedencia>
+    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------&#xD;
+| country                                   |&#xD;
+=============================================&#xD;
+| &lt;http://dbpedia.org/resource/Belgium&gt;     |&#xD;
+| &lt;http://dbpedia.org/resource/Germany&gt;     |&#xD;
+| &lt;http://dbpedia.org/resource/Netherlands&gt; |&#xD;
+---------------------------------------------&#xD;
+</j.0:PaisQueso>
+    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------&#xD;
+| name                                                                 |&#xD;
+========================================================================&#xD;
+| "Limburger"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+------------------------------------------------------------------------&#xD;
+</j.0:Nombre>
+    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |&#xD;
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "El Limburger (conocido también como Limberger) es un queso que tiene su origen en Bélgica (no proviene - como mucha gente cree - de la ciudad alemana de Limburg). Hecho de leche pasteurizada de vaca con contenidos grasos entre 20-60%, por su aroma pertenece a los quesos de olor fuerte. El color está en un rango entre el blanco y el amarillo o marrón. El sabor puede ser desde suave hasta ligeramente picante. Este queso es elaborado en Bélgica, Alemania y Estados Unidos (Wisconsin)."@es |&#xD;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionQueso>
+    <rdf:type rdf:resource="queso:QuesoSuave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Livarot">
+    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------&#xD;
+| source                                                          |&#xD;
+===================================================================&#xD;
+| "Cows"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+-------------------------------------------------------------------&#xD;
+</j.0:Procedencia>
+    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------&#xD;
+| texture                                                                     |&#xD;
+===============================================================================&#xD;
+| "Soft washed-rind"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+-------------------------------------------------------------------------------&#xD;
+</j.0:Textura>
+    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
+| name                                                               |&#xD;
+======================================================================&#xD;
+| "Livarot"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+----------------------------------------------------------------------&#xD;
+</j.0:Nombre>
+    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------&#xD;
+| country                              |&#xD;
+========================================&#xD;
+| &lt;http://dbpedia.org/resource/France&gt; |&#xD;
+----------------------------------------&#xD;
+</j.0:PaisQueso>
+    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
+| pasteurized                                                                   |&#xD;
+=================================================================================&#xD;
+| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+---------------------------------------------------------------------------------&#xD;
+</j.0:Pateurizado>
+    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                    |&#xD;
+===============================================================================================================================================================================&#xD;
+| "El livarot es un queso francés fabricado en la región de Normandía, originario de la comuna de Livarot, se beneficia de una Apelación de Origen Controlada desde 1975."@es |&#xD;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionQueso>
+    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Pasta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Fontina">
+    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------&#xD;
+| source                               |&#xD;
+========================================&#xD;
+| &lt;http://dbpedia.org/resource/Cattle&gt; |&#xD;
+----------------------------------------&#xD;
+</j.0:Procedencia>
+    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| texture |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:Textura>
+    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
+| name                                                               |&#xD;
+======================================================================&#xD;
+| "Fontina"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+----------------------------------------------------------------------&#xD;
+</j.0:Nombre>
+    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------&#xD;
+| country                             |&#xD;
+=======================================&#xD;
+| &lt;http://dbpedia.org/resource/Italy&gt; |&#xD;
+---------------------------------------&#xD;
+</j.0:PaisQueso>
+    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------&#xD;
+| pasteurized |&#xD;
+===============&#xD;
+---------------&#xD;
+</j.0:Pateurizado>
+    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                 |&#xD;
+============================================================================================================================================================================================================================================&#xD;
+| "La Fontina es un queso italiano con denominación de origen protegida a nivel europeo (1996) y Denominazione di Origine Controllata de Italia desde 1955. La zona de producción comprende toda la región autónoma de Valle de Aosta."@es |&#xD;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionQueso>
+    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:QuesoDuro">
+    <rdfs:subClassOf rdf:resource="queso:Queso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Nombre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="queso:Queso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Ravioli">
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
+| name         |&#xD;
+================&#xD;
+| "Ravioli"@en |&#xD;
+----------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
+| valorIngredientName |&#xD;
+=======================&#xD;
+| "Flour,eggs,water"  |&#xD;
+-----------------------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------&#xD;
+| country                                                          |&#xD;
+====================================================================&#xD;
+| "Italy"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+--------------------------------------------------------------------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |&#xD;
+=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "Ravioli (del italiano raviolo, plural ravioli, del genovés raviolo, ‘plegado’), son básicamente cuadrados de pasta replegados y rellenos, variando estos según las diferentes regiones, recetas y culturas culinarias. Los platos de ravioli se acompañan de salsa y más generalizadamente desde el siglo XVI, con salsas de tomate (semejantes al ragú), tucos; también se les puede acompañar con pesto (salsa a base de albahaca). Estos son los modos más típicos de preparación, aunque existen variaciones modernas a piacere (‘al gusto’). En Argentina, Paraguay y Uruguay se los llama en plural 'ravioles', en Chile y Venezuela 'ravioli' y en España 'raviolis'."@es |&#xD;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:TieneComoIngrediente">
+    <rdfs:range rdf:resource="queso:Queso"/>
+    <rdfs:domain rdf:resource="queso:Pasta"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:DescripcionPasta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="queso:Pasta"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:PaisQueso">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="queso:Queso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Bigoli">
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------&#xD;
+| name        |&#xD;
+===============&#xD;
+| "Bigoli"@en |&#xD;
+---------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| country |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| country |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |&#xD;
+===================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "Los bigoli son un tipo de pasta larga, parecidos a espaguetis gruesos, originarios del Véneto y presentes en la Lombardía oriental. Se elabora con harina de trigo, agua y sal. La característica principal de esta pasta es su rugosidad, que le permite retener salsas y condimentos. Esta peculiaridad se consigue con el método de preparación, que emplea una prensa con forma tradicional. Existen algunas variantes de esta pasta, que se obtienen cambiando el tipo de harina, por ejemplo por la de trigo sarraceno (para obtener bigoli oscuros), o añadiéndole huevo. Los bigoli se sirven con acompañantes tradicionales, especialmente pato, salsa o sardina."@es |&#xD;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="queso:Spaghetti">
+    <j.0:TieneComoIngrediente rdf:resource="queso:Parmigiano-Reggiano"/>
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------&#xD;
+| name                                                                 |&#xD;
+========================================================================&#xD;
+| "Spaghetti"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
+------------------------------------------------------------------------&#xD;
+</j.0:NombrePasta>
+    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------&#xD;
+| valorIngredientName     |&#xD;
+===========================&#xD;
+| "Semolinaorflour,water" |&#xD;
+---------------------------&#xD;
+</j.0:Ingrediente>
+    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
+| country |&#xD;
+===========&#xD;
+-----------&#xD;
+</j.0:PaisPasta>
+    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+| abstract                                                                                                                                                                                                                                                                                                                                                                                             |&#xD;
+========================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
+| "Los espagueti (del italiano, spaghetti [spaˈɡetti]; en singular, spaghetto) son un tipo de pasta italiana elaborada con harina de grano duro y agua. Tienen forma de delgadas cuerdas largas, sección circular y un tamaño aproximado entre 25 y 30 centímetros. Se trata de uno de los ingredientes más representativos de la gastronomía italiana cuya popularidad trasciende a otros países."@es |&#xD;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+</j.0:DescripcionPasta>
+    <rdf:type rdf:resource="queso:Pasta"/>
   </rdf:Description>
   <rdf:Description rdf:about="queso:Rocamadout">
     <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------&#xD;
@@ -215,31 +542,6 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
 </j.0:DescripcionQueso>
     <rdf:type rdf:resource="queso:QuesoSuave"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Pastina">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
-| name         |&#xD;
-================&#xD;
-| "Pastina"@en |&#xD;
-----------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
-| valorIngredientName |&#xD;
-=======================&#xD;
-| "Wheat flour"       |&#xD;
------------------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| country |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------&#xD;
-| abstract |&#xD;
-============&#xD;
-------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
   </rdf:Description>
   <rdf:Description rdf:about="queso:Ingrediente">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -343,97 +645,6 @@
 </j.0:DescripcionQueso>
     <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:Feta">
-    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| source                                                                                                                              |&#xD;
-=======================================================================================================================================&#xD;
-| "Pietro Casola, 15th-century Italian traveler to Crete"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt;                    |&#xD;
-| "Sheep  and goat per PDO; similar cheeses may contain cow or buffalo milk"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:Procedencia>
-    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
-| texture                                                                       |&#xD;
-=================================================================================&#xD;
-| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------------------&#xD;
-</j.0:Textura>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------&#xD;
-| name                                                            |&#xD;
-===================================================================&#xD;
-| "Feta"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
--------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------&#xD;
-| country                                                           |&#xD;
-=====================================================================&#xD;
-| "Greece"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------&#xD;
-</j.0:PaisQueso>
-    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
-| pasteurized                                                                   |&#xD;
-=================================================================================&#xD;
-| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------------------&#xD;
-</j.0:Pateurizado>
-    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |&#xD;
-=================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "Feta (griego: φέτα, género femenino, en turco beyaz peynir, literalmente \"queso blanco\", en búlgaro сирене) se trata de un queso clásico de Grecia, Turquía, Dinamarca, Rumania y Bulgaria, fundamentado en la cuajada del queso que se cura en salmuera. Este tipo de queso es muy tradicional y aparece descrito hace cientos de años y se remonta, por lo menos, a la Antigüedad clásica. La feta se elabora generalmente con leche de oveja aunque puede encontrase variedades con leche de yegua. El queso feta tiene tal popularidad en Grecia que incluso se importa de otras zonas, como Dinamarca. En Grecia se elaboraba tradicionalmente con leche de oveja, o a veces con una mezcla de leche de oveja y cabra, lo cual le daba un sabor bien definido, y un punto de sal derivado de sumergir el queso fresco en salmuera.Actualmente, se utiliza también leche de vaca y su sabor ya no es tan definido."@es |&#xD;
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionQueso>
-    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Croxetti">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------&#xD;
-| name          |&#xD;
-=================&#xD;
-| "Croxetti"@en |&#xD;
------------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
-| valorIngredientName |&#xD;
-=======================&#xD;
------------------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| country |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------&#xD;
-| abstract |&#xD;
-============&#xD;
-------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Maultasche">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------&#xD;
-| name             |&#xD;
-====================&#xD;
-| "Maultaschen"@en |&#xD;
---------------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------&#xD;
-| valorIngredientName                                               |&#xD;
-=====================================================================&#xD;
-| "Pasta dough,minced meat,smoked meat,spinach,bread crumbs,onions" |&#xD;
----------------------------------------------------------------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
-| country                                                            |&#xD;
-======================================================================&#xD;
-| "Germany"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-----------------------------------------------------------------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                   |&#xD;
-==============================================================================================================================================================================================================================&#xD;
-| "Las Maultaschen son una especialidad de pasta rellena, a veces acompañada de caldo, típica de la región de Suabia (Alemania) y muy conocida en la cocina alemana. En alemán significa literalmente bolsillo de morro."@es |&#xD;
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Brie">
     <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
 | country |&#xD;
@@ -465,56 +676,13 @@
 </j.0:Envejecimiento>
     <rdf:type rdf:resource="queso:QuesoDuro"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:Tetilla">
-    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------&#xD;
-| source                                                                |&#xD;
-=========================================================================&#xD;
-| "Cows' milk"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
--------------------------------------------------------------------------&#xD;
-</j.0:Procedencia>
-    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------&#xD;
-| texture                                                                 |&#xD;
-===========================================================================&#xD;
-| "Soft, creamy"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------------&#xD;
-</j.0:Textura>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
-| name                                                               |&#xD;
-======================================================================&#xD;
-| "Tetilla"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-----------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------&#xD;
-| country                                                          |&#xD;
-====================================================================&#xD;
-| "Spain"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
---------------------------------------------------------------------&#xD;
-</j.0:PaisQueso>
-    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------&#xD;
-| pasteurized                                                    |&#xD;
-==================================================================&#xD;
-| "Yes"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-------------------------------------------------------------------&#xD;
-</j.0:Pateurizado>
-    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |&#xD;
-=======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "El queso tetilla es uno de los quesos más representativos de la gastronomía de Galicia (España) y se trata de uno de los quesos con denominación de Origen. Está elaborado fundamentalmente con leche pasteurizada de vaca de las razas gallegas, con una maduración mínima de 7 días. Su forma cónica, cóncava-convexa, es la que le da nombre, porque recuerda a una mama o «tetilla»; esta forma le viene dada por los embudos en los que se deja cuajar la leche al inicio de su elaboración, característica que comparte con otras especialidades queseras gallegas, como el queso de San Simón. Posee Denominación de Origen desde 1992."@es |&#xD;
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionQueso>
-    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:QuesoSuave">
-    <rdfs:subClassOf rdf:resource="queso:Queso"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Pasta_al_pomodoro">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------&#xD;
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------&#xD;
 | name                   |&#xD;
 ==========================&#xD;
 | "Pasta al pomodoro"@en |&#xD;
 --------------------------&#xD;
-</j.0:Nombre>
+</j.0:NombrePasta>
     <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
 | country |&#xD;
 ===========&#xD;
@@ -563,12 +731,6 @@
 </j.0:DescripcionQueso>
     <rdf:type rdf:resource="queso:QuesoSuave"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:Procedencia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="queso:Queso"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Manchego">
     <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------&#xD;
 | country                             |&#xD;
@@ -602,35 +764,6 @@
 </j.0:Envejecimiento>
     <rdf:type rdf:resource="queso:QuesoDuro"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:Limburger">
-    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------&#xD;
-| source                            |&#xD;
-=====================================&#xD;
-| &lt;http://dbpedia.org/resource/Cow&gt; |&#xD;
--------------------------------------&#xD;
-</j.0:Procedencia>
-    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------&#xD;
-| country                                   |&#xD;
-=============================================&#xD;
-| &lt;http://dbpedia.org/resource/Belgium&gt;     |&#xD;
-| &lt;http://dbpedia.org/resource/Germany&gt;     |&#xD;
-| &lt;http://dbpedia.org/resource/Netherlands&gt; |&#xD;
----------------------------------------------&#xD;
-</j.0:PaisQueso>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------------------------------------------------------&#xD;
-| name                                                                 |&#xD;
-========================================================================&#xD;
-| "Limburger"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-------------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |&#xD;
-==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "El Limburger (conocido también como Limberger) es un queso que tiene su origen en Bélgica (no proviene - como mucha gente cree - de la ciudad alemana de Limburg). Hecho de leche pasteurizada de vaca con contenidos grasos entre 20-60%, por su aroma pertenece a los quesos de olor fuerte. El color está en un rango entre el blanco y el amarillo o marrón. El sabor puede ser desde suave hasta ligeramente picante. Este queso es elaborado en Bélgica, Alemania y Estados Unidos (Wisconsin)."@es |&#xD;
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionQueso>
-    <rdf:type rdf:resource="queso:QuesoSuave"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Bryndza">
     <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------&#xD;
 | source                                                           |&#xD;
@@ -660,48 +793,6 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="queso:QuesoSemiSuave"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Livarot">
-    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------&#xD;
-| source                                                          |&#xD;
-===================================================================&#xD;
-| "Cows"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
--------------------------------------------------------------------&#xD;
-</j.0:Procedencia>
-    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------&#xD;
-| texture                                                                     |&#xD;
-===============================================================================&#xD;
-| "Soft washed-rind"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
--------------------------------------------------------------------------------&#xD;
-</j.0:Textura>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
-| name                                                               |&#xD;
-======================================================================&#xD;
-| "Livarot"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-----------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------&#xD;
-| country                              |&#xD;
-========================================&#xD;
-| &lt;http://dbpedia.org/resource/France&gt; |&#xD;
-----------------------------------------&#xD;
-</j.0:PaisQueso>
-    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------------------------------------------------&#xD;
-| pasteurized                                                                   |&#xD;
-=================================================================================&#xD;
-| "Depends on variety"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
----------------------------------------------------------------------------------&#xD;
-</j.0:Pateurizado>
-    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                    |&#xD;
-===============================================================================================================================================================================&#xD;
-| "El livarot es un queso francés fabricado en la región de Normandía, originario de la comuna de Livarot, se beneficia de una Apelación de Origen Controlada desde 1975."@es |&#xD;
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionQueso>
-    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Pasta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="queso:Gorgonzola">
     <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------&#xD;
@@ -744,12 +835,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="queso:Macaroni_casserole">
     <j.0:TieneComoIngrediente rdf:resource="queso:Mozzarella"/>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------&#xD;
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------&#xD;
 | name                    |&#xD;
 ===========================&#xD;
 | "Macaroni casserole"@en |&#xD;
 ---------------------------&#xD;
-</j.0:Nombre>
+</j.0:NombrePasta>
     <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------&#xD;
 | valorIngredientName  |&#xD;
 ========================&#xD;
@@ -803,43 +894,6 @@
 | abstract |&#xD;
 ============&#xD;
 ------------&#xD;
-</j.0:DescripcionQueso>
-    <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Fontina">
-    <j.0:Procedencia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------&#xD;
-| source                               |&#xD;
-========================================&#xD;
-| &lt;http://dbpedia.org/resource/Cattle&gt; |&#xD;
-----------------------------------------&#xD;
-</j.0:Procedencia>
-    <j.0:Textura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
-| texture |&#xD;
-===========&#xD;
------------&#xD;
-</j.0:Textura>
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------------------------------------------------------------&#xD;
-| name                                                               |&#xD;
-======================================================================&#xD;
-| "Fontina"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
-----------------------------------------------------------------------&#xD;
-</j.0:Nombre>
-    <j.0:PaisQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------------------------------&#xD;
-| country                             |&#xD;
-=======================================&#xD;
-| &lt;http://dbpedia.org/resource/Italy&gt; |&#xD;
----------------------------------------&#xD;
-</j.0:PaisQueso>
-    <j.0:Pateurizado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---------------&#xD;
-| pasteurized |&#xD;
-===============&#xD;
----------------&#xD;
-</j.0:Pateurizado>
-    <j.0:DescripcionQueso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                 |&#xD;
-============================================================================================================================================================================================================================================&#xD;
-| "La Fontina es un queso italiano con denominación de origen protegida a nivel europeo (1996) y Denominazione di Origine Controllata de Italia desde 1955. La zona de producción comprende toda la región autónoma de Valle de Aosta."@es |&#xD;
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
 </j.0:DescripcionQueso>
     <rdf:type rdf:resource="queso:QuesoSemiSuave"/>
   </rdf:Description>
@@ -943,58 +997,10 @@
 </j.0:DescripcionQueso>
     <rdf:type rdf:resource="queso:QuesoSuave"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:QuesoDuro">
-    <rdfs:subClassOf rdf:resource="queso:Queso"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Nombre">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="queso:Queso"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="queso:Envejecimiento">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="queso:QuesoDuro"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:Ravioli">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">----------------&#xD;
-| name         |&#xD;
-================&#xD;
-| "Ravioli"@en |&#xD;
-----------------&#xD;
-</j.0:Nombre>
-    <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------------------&#xD;
-| valorIngredientName |&#xD;
-=======================&#xD;
-| "Flour,eggs,water"  |&#xD;
------------------------&#xD;
-</j.0:Ingrediente>
-    <j.0:PaisPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--------------------------------------------------------------------&#xD;
-| country                                                          |&#xD;
-====================================================================&#xD;
-| "Italy"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&gt; |&#xD;
---------------------------------------------------------------------&#xD;
-</j.0:PaisPasta>
-    <j.0:DescripcionPasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-| abstract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |&#xD;
-=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================&#xD;
-| "Ravioli (del italiano raviolo, plural ravioli, del genovés raviolo, ‘plegado’), son básicamente cuadrados de pasta replegados y rellenos, variando estos según las diferentes regiones, recetas y culturas culinarias. Los platos de ravioli se acompañan de salsa y más generalizadamente desde el siglo XVI, con salsas de tomate (semejantes al ragú), tucos; también se les puede acompañar con pesto (salsa a base de albahaca). Estos son los modos más típicos de preparación, aunque existen variaciones modernas a piacere (‘al gusto’). En Argentina, Paraguay y Uruguay se los llama en plural 'ravioles', en Chile y Venezuela 'ravioli' y en España 'raviolis'."@es |&#xD;
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
-</j.0:DescripcionPasta>
-    <rdf:type rdf:resource="queso:Pasta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:TieneComoIngrediente">
-    <rdfs:range rdf:resource="queso:Queso"/>
-    <rdfs:domain rdf:resource="queso:Pasta"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="queso:DescripcionPasta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="queso:Pasta"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="queso:Ricotta">
@@ -1030,19 +1036,19 @@
 </j.0:Envejecimiento>
     <rdf:type rdf:resource="queso:QuesoDuro"/>
   </rdf:Description>
-  <rdf:Description rdf:about="queso:PaisQueso">
+  <rdf:Description rdf:about="queso:NombrePasta">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="queso:Queso"/>
+    <rdfs:domain rdf:resource="queso:Pasta"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="queso:Pasta_primavera">
-    <j.0:Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------&#xD;
+    <j.0:NombrePasta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">------------------------&#xD;
 | name                 |&#xD;
 ========================&#xD;
 | "Pasta primavera"@en |&#xD;
 ------------------------&#xD;
-</j.0:Nombre>
+</j.0:NombrePasta>
     <j.0:Ingrediente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-----------&#xD;
 | country |&#xD;
 ===========&#xD;
